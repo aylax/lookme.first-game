@@ -1,0 +1,30 @@
+#+TITLE: aylax's nixos-bevy
+#+KEYWORDS: nixos bevy
+#+DATE: 2021-08-31
+#+AUTHOR: aylax zhou
+#+EMAIL: zhoubye@foxmail.com
+#+DESCRIPTION: A description of bevy in nixos
+#+OPTIONS: author:t creator:t timestamp:t email:t
+
+The repo used to create a template for bevy in nixos.
+
+** install
+#+begin_src sh
+git clone https://github.com/aylax/devhub.nixos-bevy
+#+end_src
+
+** usage
+#+begin_src sh
+nix-shell
+cargo run
+#+end_src
+
+** refs & thanks
+- [[https://github.com/RichardLitt/standard-readme.git][standard readme]]
+- [[https://github.com/thomasheartman/bevy_tutorial_nixos][nixos bevy]]
+- [[https://bevyengine.org/assets/#games][bevy games]]
+- [[https://mbuffett.com/posts/bevy-snake-tutorial/][beny snake game]]
+- [[https://bevyengine.org/learn/book/introduction/][bevy the book]]
+
+** license
+[[https://github.com/aylax/devhub.nixos-bevy/blob/master/license][BSD-3-Clause]] © aylax
