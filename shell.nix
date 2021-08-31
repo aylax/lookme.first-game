@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> { } }:
 with pkgs;
 mkShell {
   shellHook = ''
@@ -8,7 +8,7 @@ mkShell {
       pkgs.vulkan-loader
     ]}"
   '';
-  buildInputs = [ 
+  buildInputs = [
     cargo
 
     # fast compiler
