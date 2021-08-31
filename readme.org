@@ -1,4 +1,4 @@
-#+TITLE: aylax's nixos-bevy
+#+TITLE: aylax's first game
 #+KEYWORDS: nixos bevy
 #+DATE: 2021-08-31
 #+AUTHOR: aylax zhou
@@ -6,11 +6,11 @@
 #+DESCRIPTION: A description of bevy in nixos
 #+OPTIONS: author:t creator:t timestamp:t email:t
 
-The repo used to create a template for bevy in nixos.
+The repo used to learn how bevy-engine works.
 
 ** install
 #+begin_src sh
-git clone https://github.com/aylax/devhub.nixos-bevy
+git clone https://github.com/aylax/devhub.first-game
 #+end_src
 
 ** usage
@@ -27,4 +27,4 @@ cargo run
 - [[https://bevyengine.org/learn/book/introduction/][bevy the book]]
 
 ** license
-[[https://github.com/aylax/devhub.nixos-bevy/blob/master/license][BSD-3-Clause]] © aylax
+[[https://github.com/aylax/devhub.first-game/blob/master/license][BSD-3-Clause]] © aylax
