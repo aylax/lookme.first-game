@@ -27,4 +27,4 @@ cargo run
 - [[https://bevyengine.org/learn/book/introduction/][bevy the book]]
 
 ** license
-[[https://github.com/aylax/devhub.first-game/blob/master/license][BSD-3-Clause]] © aylax
+BSD-3-Clause © aylax
