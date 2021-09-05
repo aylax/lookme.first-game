@@ -10,7 +10,7 @@ The repo used to learn how bevy-engine works.
 
 ** install
 #+begin_src sh
-git clone https://github.com/aylax/devhub.first-game
+git clone https://github.com/aylax/lookme.first-game
 #+end_src
 
 ** usage
