@@ -21,8 +21,8 @@ rustflags = ["-Zshare-generics=y"]
 #[profile.dev]
 #debug = 1
 
-## Optional: Proxy
-#[http]
-#proxy = "127.0.0.1:1081"
-#[https]
-#proxy = "127.0.0.1:1081"
+# Optional: Proxy
+[http]
+proxy = "127.0.0.1:1081"
+[https]
+proxy = "127.0.0.1:1081"
