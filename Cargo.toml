@@ -4,5 +4,5 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-bevy = "0.5.0"
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "f4776f2ec413bb80ff4ee51e04bb57f0a44d9983" }
 rand = "0.8.4"
