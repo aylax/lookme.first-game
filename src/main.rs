@@ -14,6 +14,9 @@ struct Name(String);
 #[derive(Component)]
 struct Health(u8);
 
+#[derive(Component)]
+struct Position;
+
 fn setup_system(mut commands: Commands) {
     println!("[ ECS ] -- < setup >");
     commands.spawn_bundle((Name(format!("Jade")), Health(60)));
