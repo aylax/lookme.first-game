@@ -35,8 +35,10 @@ impl Plugin for ControlPlugin {
 }
 
 fn input_keybord_system(input: Res<Input<KeyCode>>) {
-    if input.just_pressed(KeyCode::A) {
-        println!("press  KeyCode::A");
+    let press_shift = input.any_pressed([KeyCode::LShift, KeyCode::RShift]);
+    let press_ctrl = input.any_pressed([KeyCode::LControl, KeyCode::RControl]);
+    if press_shift && press_ctrl && input.just_pressed(KeyCode::K) {
+        println!("Press KeyCode::[Ctrl + Shift + K]");
     }
 }
 
