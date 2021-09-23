@@ -9,8 +9,8 @@ fn main() {
         .add_plugins(DefaultPlugins)
         .add_plugin(ControlPlugin)
         .add_startup_system(setup_system)
-        //.add_system(print_entity_system)
-        //.add_system_to_stage(CoreStage::Update, move_system)
+        .add_system(print_entity_system)
+        .add_system_to_stage(CoreStage::Update, move_position_system)
         .run();
 }
 
@@ -35,7 +35,7 @@ impl Plugin for ControlPlugin {
 }
 
 fn input_keybord_system(input: Res<Input<KeyCode>>) {
-    if input.pressed(KeyCode::A) {
+    if input.just_pressed(KeyCode::A) {
         println!("press  KeyCode::A");
     }
 }
@@ -49,16 +49,17 @@ fn setup_system(mut commands: Commands) {
 
 fn print_entity_system(query: Query<(&Name, &Health, &Position)>) {
     for (name, health, position) in query.iter() {
-        println!(
-            "name: {}, health: {}, position: {:?}",
-            name.0, health.0, position
-        );
+        if position.x + position.y < 12.0 {
+            println!("name: {}, health: {}, {:?}", name.0, health.0, position);
+        }
     }
 }
 
-fn move_system(mut query: Query<(&mut Position,)>) {
+fn move_position_system(mut query: Query<(&mut Position,)>) {
     for (mut position,) in query.iter_mut() {
-        position.x += 2.0;
-        position.y += 4.0;
+        if position.x + position.y < 240.0 {
+            position.x += 2.0;
+            position.y += 4.0;
+        }
     }
 }
